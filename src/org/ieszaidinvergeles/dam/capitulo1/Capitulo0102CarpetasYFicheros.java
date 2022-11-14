@@ -29,17 +29,18 @@ public class Capitulo0102CarpetasYFicheros {
 
         String ruta = "MiProyecto";
         OperacionesCarpetas.crearDirectoriosProyecto(ruta);
-//        OperacionesCarpetas.borrarDirectorio(ruta);
-//        OperacionesCarpetas.moverDirectorio(ruta, "MiProyecto2");
+        //OperacionesCarpetas.borrarDirectorio(ruta);
+        //OperacionesCarpetas.moverDirectorio(ruta, "MiProyecto2");
 
 //        OperacionesFicheros.crearFicherosProyecto(ruta);
-//        OperacionesFicheros.moverArchivos(ruta + "/private/data", ruta+"/public", 
-//                f -> f.getFileName().toString().startsWith("m"));
+        OperacionesFicheros.moverArchivos(ruta + "/private/data", ruta+"/public", 
+                f -> f.getFileName().toString().startsWith("m"));
 
-//        OperacionesFicheros.buscar(ruta, fichero -> fichero.getFileName().endsWith("pdf"))
-//                .stream()
-//                .forEach(System.out::println);
-        
+/*        OperacionesFicheros.buscar(ruta, fichero -> fichero.getFileName().toString().endsWith("pdf"))
+                .stream()
+                //.forEach(t -> {System.out.println(t.getFileName().toString());});
+                .forEach(System.out::println);
+*/        
 
     }
 
